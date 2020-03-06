@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste</title>
+  <link rel="stylesheet" href="css/principal.css">
+</head>
+<body>
+<div class="main" id="short">
+	<h1 style="text-align:center;margin: 7px">Simulador de Lançamento Obliquo</h1>
+	<div id="container">
+		<!-- O objeto que vai ser animado -->
+		<div class="animate"></div>
+
+		<!-- A grade contendo as distancias -->
+		<div class="grid">5</div>
+		<div class="grid">10</div>
+		<div class="grid">15</div>
+		<div class="grid">20</div>
+		<div class="grid">25</div>
+    	<div class="grid">30</div>
+		<div class="grid">35</div>
+	    <div class="grid">40</div>
+	    <div class="grid">45</div>
+	    <div class="grid">50</div>
+	    <div class="grid">55</div>
+	    <div class="grid">60</div>
+	    <div class="grid">65</div>
+	    <div class="grid">70</div>
+	    <div class="grid">75</div>
+	    <div class="grid">80</div>
+	    <div class="grid">85</div>
+	    <div class="grid">90</div>
+	    <div class="grid">95</div>
+	    <div class="grid">100</div>
+
+		<!-- A grade vertical -->
+		<div class="gridvert"></div>
+		<div class="gridvert"></div>
+		<div class="gridvert"></div>
+		<div class="gridvert"></div>
+		<div class="gridvert"></div>
+	</div>
+</div>
+
+<!-- Campos de entrada -->
+<div class="input" style="margin-top: 30px;">
+	<div class="row"> 
+		<div class="float">
+			<div class="content">
+				<label for="ang">Digite o angulo de lançamento: </label><br>
+				<input id="ang" type="text" value="">
+			</div>
+		</div>
+		<div class="float">
+			<div class="content">
+				<label for="vel">Digite a velocidade de lançamento: </label><br>
+				<input id="vel" type="text" value="">
+			</div>
+		</div>
+		<div class="float">
+			<div class="content">
+				<label for="acel">Digite a aceleração: </label><br>
+				<input id="acel" type="text" value="">
+			</div>
+		</div>
+	</div>
+	<div style="text-align: center">
+		<button type="button" onclick="myMove()">Executar</button>
+		<button type="button" onclick="reload()" style="background-color: lightblue">Limpar</button>
+    <button style="background-color: tomato" id="bola">Bola</button><br>
+    <input type="checkbox" id="check">Acompanhar
+	</div>
+</div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+* { box-sizing: border-box; }
+
+body {
+	background-color: lightblue;
+	color: #666;
+  font-family: Arial;
+}
+
+.main {
+	background-color: white;
+	width: 100%;
+	overflow: auto;
+	padding: 12px 20px;
+	border-radius: 20px;
+	border-left: 5px solid lightgreen;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#container {
+	height: 500px;
+	width: 10000px;
+	position: relative;
+	background-color: rgb(0, 250, 150);
+	overflow: hidden;
+}
+
+.animate {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: red;
+}
+
+.input {
+	width: 100%;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	padding: 15px;
+	border-radius: 20px;
+	border-bottom: 5px solid lightgreen;
+	background-color: white;
+}
+
+	.input button, .input button a {
+		border: none;
+		padding: 10px 20px;
+		text-decoration: none;
+		background-color: lightgreen;
+		color: white;
+		font-size: 17px;
+		cursor: pointer;
+		outline: none;
+	}
+
+	.input button:hover { opacity: 0.5; }
+
+	.input input[type=text] {
+		width: 250px;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		padding: 3px 5px;
+		margin: 5px 0 15px 0;
+		font-size: 16px;
+		text-align: center;
+		outline: none;
+	}
+
+.input input:hover, .input input:focus {
+  border: 1px solid lightgreen;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.row:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.float {
+	float: left;
+	width: 33.3%;
+	text-align: center;
+}
+
+.float .content {
+	display: inline-block;
+	text-align: left;
+}
+
+.grid {
+	width: 500px;
+	height: 20px;
+	float: left;
+	margin-top: 480px;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	text-align: right;
+	font-weight: bold;
+	font-size: 20px;
+	color: #555;
+}
+
+.gridvert {
+	width: 10000px;
+	height: 100px;
+	border-top: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	text-align: center;
+	color: black;
+}
+
+::-webkit-scrollbar {
+	visibility: hidden;
+	width: 8px;
+	height: 8px;
+	
+}
+
+::-webkit-scrollbar-track {
+	background-color: #ddd;
+	border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(10, 200, 50, 0.7);
+	border-radius: 15px;
+}
+
+/*::-webkit-scrollbar:hover { visibility: visible; }*/
